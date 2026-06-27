@@ -1,0 +1,10 @@
+streamlit
+pandas
+sqlalchemy
+psycopg2-binary
+python-dotenv
+PyPDF2
+python-docx
+scikit-learn
+spacy
+plotly
