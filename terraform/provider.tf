@@ -11,5 +11,5 @@ terraform {
 
 provider "aws" {
   region  = var.aws_region
-  profile = "resume-analyzer"
+  profile = "resume-user"
 }

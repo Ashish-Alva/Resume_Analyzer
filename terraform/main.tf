@@ -161,7 +161,7 @@ resource "aws_security_group" "ec2" {
 # ─── SECURITY GROUP — RDS ────────────────────────────────────────────────────
 resource "aws_security_group" "rds" {
   name        = "${var.project_name}-rds-sg"
-  description = "Security group for RDS — EC2 access only"
+  description = "Security group for RDS - EC2 access only"
   vpc_id      = aws_vpc.main.id
 
   ingress {
@@ -272,7 +272,7 @@ data "aws_ami" "amazon_linux" {
 
 resource "aws_instance" "main" {
   ami                    = data.aws_ami.amazon_linux.id
-  instance_type          = "t2.micro"
+  instance_type          = "t3.micro"
   subnet_id              = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.ec2.id]
   key_name               = var.ec2_key_pair_name

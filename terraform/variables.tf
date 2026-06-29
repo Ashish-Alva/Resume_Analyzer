@@ -29,7 +29,7 @@ variable "db_password" {
 variable "db_username" {
   description = "postgres"
   type        = string
-  default     = "postgres"
+  default     = "ResumeUser"
 }
 
 variable "db_name" {
