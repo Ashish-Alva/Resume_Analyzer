@@ -1,0 +1,12 @@
+# ─── terraform/terraform.tfvars.example ─────────────
+# Copy this file to terraform.tfvars and fill in your values
+# terraform.tfvars is gitignored — never commit real values
+
+aws_region        = "ap-south-1"
+project_name      = "resume-analyzer"
+your_ip_cidr      = "YOUR_PUBLIC_IP/32"
+ec2_key_pair_name = "resumekeypair"
+db_password       = "YOUR_STRONG_DB_PASSWORD"
+db_username       = "postgres"
+db_name           = "resume_db"
+account_id        = "YOUR_12_DIGIT_AWS_ACCOUNT_ID"

@@ -1,55 +1,51 @@
+# ─── Git ─────────────────────────────────────────────
+.git/
+.gitignore
+
 # ─── Python ──────────────────────────────────────────
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
+*.pyo
+*.pyd
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
-*.egg
 .pytest_cache/
+.coverage
+htmlcov/
 
 # ─── Virtual Environment ─────────────────────────────
 venv/
 env/
-ENV/
 .venv/
+ENV/
 
 # ─── Environment Variables ───────────────────────────
 .env
-.env.local
-.env.production
+.env.*
 *.env
 
 # ─── Terraform ───────────────────────────────────────
-terraform/.terraform/
-terraform/.terraform.lock.hcl
-terraform/terraform.tfstate
-terraform/terraform.tfstate.backup
-terraform/terraform.tfvars
-terraform/.terraform.tfstate.lock.info
-*.tfplan
-tfplan
-
-# ─── AWS ─────────────────────────────────────────────
-.aws/
-*.pem
-*.ppk
+terraform/
+*.tf
+*.tfvars
+*.tfstate
+.terraform/
 
 # ─── Docker ──────────────────────────────────────────
-.docker/
+docker/
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# ─── Nginx ───────────────────────────────────────────
+nginx/
+
+# ─── Jenkins ─────────────────────────────────────────
+jenkins/
+Jenkinsfile
+
+# ─── Monitoring ──────────────────────────────────────
+monitoring/
 
 # ─── IDE ─────────────────────────────────────────────
 .vscode/
@@ -63,11 +59,11 @@ Thumbs.db
 *.log
 logs/
 
-# ─── Test uploads (sample resumes) ───────────────────
-app/data/uploads/
-*.pdf
-*.docx
+# ─── Docs ────────────────────────────────────────────
+README.md
+*.md
+docs/
 
-# ─── Jupyter ─────────────────────────────────────────
-.ipynb_checkpoints/
-*.ipynb
+# ─── AWS Keys ────────────────────────────────────────
+*.pem
+*.ppk
