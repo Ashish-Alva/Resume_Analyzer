@@ -14,6 +14,7 @@ DATABASE_URL = (
     f"{os.getenv('DB_HOST')}:"
     f"{os.getenv('DB_PORT')}/"
     f"{os.getenv('DB_NAME')}"
+    f"?sslmode=require"
 )
 
 engine = create_engine(

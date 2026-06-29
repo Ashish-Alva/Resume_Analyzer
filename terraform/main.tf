@@ -278,6 +278,11 @@ resource "aws_instance" "main" {
   key_name               = var.ec2_key_pair_name
   iam_instance_profile   = aws_iam_instance_profile.ec2_profile.name
 
+   root_block_device {
+    volume_size = 20
+    volume_type = "gp2"
+  }
+
   user_data = <<-EOF
     #!/bin/bash
     yum update -y
